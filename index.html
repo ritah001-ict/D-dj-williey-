@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-Dj Williey Entertainment 016</title>
+  <style>
+    :root { --green: #08783e; --deep: #064d2a; --lime: #b8f36b; --light: #f3fff6; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--green); color: white; }
+    header { background: var(--deep); padding: 15px 6%; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; position: sticky; top: 0; z-index: 10; }
+    .brand { font-size: 1.1rem; font-weight: 800; letter-spacing: .4px; }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: var(--lime); }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; align-items: center; padding: 48px 6%; max-width: 1200px; margin: auto; }
+    .hero img { width: 100%; max-height: 540px; object-fit: cover; object-position: center; border-radius: 18px; border: 4px solid rgba(255,255,255,.7); box-shadow: 0 14px 32px #003d2380; }
+    .eyebrow { color: var(--lime); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+    h1 { font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: 1.02; margin: 12px 0; }
+    h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); margin-top: 0; }
+    .hero p { font-size: 1.08rem; line-height: 1.7; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn { display: inline-block; background: var(--lime); color: #12351e; padding: 13px 19px; border-radius: 9px; text-decoration: none; font-weight: 800; border: 0; cursor: pointer; }
+    .btn.outline { background: transparent; color: white; border: 2px solid white; }
+    section { padding: 55px 6%; }
+    .section-inner { max-width: 1200px; margin: auto; }
+    .light { background: var(--light); color: #163b25; }
+    .section-intro { max-width: 680px; line-height: 1.65; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 15px; margin-top: 24px; }
+    .service { padding: 20px; border-radius: 12px; background: #ffffff16; border: 1px solid #ffffff40; font-weight: bold; }
+    .light .service { background: white; border-color: #d7eadc; box-shadow: 0 5px 15px #153b2510; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 25px; }
+    .gallery img { width: 100%; height: 280px; object-fit: cover; border-radius: 13px; box-shadow: 0 7px 18px #002c1830; }
+    .booking { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; }
+    form { background: white; color: #183c26; padding: 24px; border-radius: 15px; box-shadow: 0 10px 24px #003d2320; }
+    label { display: block; font-weight: bold; margin: 13px 0 6px; }
+    input, select, textarea { width: 100%; padding: 12px; border: 1px solid #b8cdbd; border-radius: 8px; font: inherit; background: #fbfffc; }
+    textarea { min-height: 110px; resize: vertical; }
+    form .btn { margin-top: 17px; width: 100%; font-size: 1rem; }
+    .contact-card { background: #ffffff16; padding: 23px; border: 1px solid #ffffff40; border-radius: 14px; line-height: 1.8; }
+    .contact-card a { color: var(--lime); font-weight: bold; }
+    footer { background: #03381e; text-align: center; padding: 22px; font-size: .92rem; }
+    @media (max-width: 760px) {
+      .hero, .booking { grid-template-columns: 1fr; }
+      .hero { padding-top: 30px; }
+      .hero img { max-height: 480px; }
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .gallery img { height: 210px; }
+      header { position: static; }
+    }
+    @media (max-width: 440px) { .gallery { grid-template-columns: 1fr; } .gallery img { height: auto; max-height: 420px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🎧 D-DJ WILLIEY ENT. 016</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">Your event, our sound</div>
+        <h1>D-Dj Williey Entertainment 016</h1>
+        <p>Bringing energy, great music and unforgettable moments to your special occasions. Book D-Dj Williey for professional entertainment and event services.</p>
+        <div class="actions">
+          <a class="btn" href="tel:0713592682">Call 0713592682</a>
+          <a class="btn outline" href="#booking">Book an Event</a>
+        </div>
+      </div>
+      <img src="images/profile.jpg" alt="D-Dj Williey profile photo">
+    </section>
+
+    <section id="services">
+      <div class="section-inner">
+        <h2>Our Services</h2>
+        <p class="section-intro">Sound and entertainment for celebrations, ceremonies and special events.</p>
+        <div class="services">
+          <div class="service">🎧 DJ services</div>
+          <div class="service">💍 Weddings</div>
+          <div class="service">🎓 Graduation ceremonies</div>
+          <div class="service">🎂 Birthday parties</div>
+          <div class="service">🥂 Pre-wedding events</div>
+          <div class="service">🏡 House parties</div>
+          <div class="service">👨‍👩‍👧 Dowry ceremonies & family visits</div>
+          <div class="service">🏢 Corporate events</div>
+          <div class="service">🎉 Baby showers & celebrations</div>
+          <div class="service">📣 Roadshows & brand promotions</div>
+          <div class="service">🏫 School and cultural days</div>
+          <div class="service">🎶 Freshers nights</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light" id="gallery">
+      <div class="section-inner">
+        <h2>Photo Gallery</h2>
+        <p class="section-intro">A look at D-Dj Williey in action. Tap a photo to view it larger.</p>
+        <div class="gallery">
+          <a href="images/gallery1.jpg" target="_blank" rel="noopener"><img src="images/gallery1.jpg" alt="D-Dj Williey at an event, gallery photo 1"></a>
+          <a href="images/gallery2.jpg" target="_blank" rel="noopener"><img src="images/gallery2.jpg" alt="D-Dj Williey performing, gallery photo 2"></a>
+          <a href="images/gallery3.jpg" target="_blank" rel="noopener"><img src="images/gallery3.jpg" alt="D-Dj Williey with camera, gallery photo 3"></a>
+          <a href="images/gallery4.jpg" target="_blank" rel="noopener"><img src="images/gallery4.jpg" alt="D-Dj Williey working at an event, gallery photo 4"></a>
+          <a href="images/gallery5.jpg" target="_blank" rel="noopener"><img src="images/gallery5.jpg" alt="D-Dj Williey event photo, gallery photo 5"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="section-inner booking">
+        <div>
+          <h2>Book D-Dj Williey</h2>
+          <p class="section-intro">Tell us about your event and send the booking details directly through WhatsApp.</p>
+          <div class="contact-card">
+            <strong>Phone / WhatsApp</strong><br>
+            <a href="https://wa.me/254713592682">0713592682 — Chat on WhatsApp</a><br><br>
+            <strong>Service area</strong><br>
+            Machakos and surrounding areas
+          </div>
+        </div>
+        <form id="bookingForm">
+          <h3>Booking Enquiry</h3>
+          <label for="name">Your name</label>
+          <input id="name" name="name" required placeholder="Enter your name">
+          <label for="phone">Your phone number</label>
+          <input id="phone" name="phone" type="tel" required placeholder="Enter your number">
+          <label for="event">Type of event</label>
+          <select id="event" name="event" required>
+            <option value="">Choose an event</option>
+            <option>Wedding</option><option>Graduation</option><option>Birthday party</option>
+            <option>Corporate event</option><option>Dowry ceremony / family visit</option>
+            <option>Baby shower</option><option>Roadshow / brand promotion</option>
+            <option>School / cultural event</option><option>Other</option>
+          </select>
+          <label for="date">Event date</label>
+          <input id="date" name="date" type="date" required>
+          <label for="location">Event location</label>
+          <input id="location" name="location" required placeholder="Where will the event take place?">
+          <label for="details">Extra details</label>
+          <textarea id="details" name="details" placeholder="Tell us more about your event"></textarea>
+          <button class="btn" type="submit">Send Booking on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> D-Dj Williey Entertainment 016 · Good music, great memories.</footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const value = id => document.getElementById(id).value.trim();
+      const message = [
+        "Hello D-Dj Williey Entertainment 016, I would like to make a booking.",
+        "Name: " + value("name"),
+        "My phone: " + value("phone"),
+        "Event: " + value("event"),
+        "Date: " + value("date"),
+        "Location: " + value("location"),
+        "Details: " + (value("details") || "Not provided")
+      ].join("\n");
+      window.open("https://wa.me/254713592682?text=" + encodeURIComponent(message), "_blank");
+    });
+  </script>
+</body>
+</html>
